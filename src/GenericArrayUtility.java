@@ -14,10 +14,10 @@ public class GenericArrayUtility {
 
     public static <T> T[] mergeArrays(T[] a, T[] b) {
         if (a == null && b == null) {
-            return null; // Both arrays are null, return null
+            return null; 
         }
-        if (a == null) return b; // Only first array is null
-        if (b == null) return a; // Only second array is null
+        if (a == null) return b; 
+        if (b == null) return a; 
 
         int length = a.length + b.length;
         @SuppressWarnings("unchecked")
